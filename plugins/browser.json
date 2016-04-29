@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "flyacts-plugin-barcodescanner": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        }
+    },
+    "dependent_plugins": {}
+}

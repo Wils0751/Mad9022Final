@@ -1,0 +1,99 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BarcodeScanner\"><param name=\"browser-package\" value=\"BarcodeScanner\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        },
+        "flyacts-plugin-barcodescanner": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.myApp"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+            "id": "cordova-plugin-device.DeviceProxy",
+            "pluginId": "cordova-plugin-device",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+            "id": "cordova-sqlite-storage.SQLitePlugin",
+            "pluginId": "cordova-sqlite-storage",
+            "clobbers": [
+                "SQLitePlugin"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+            "id": "cordova-plugin-keyboard.keyboard",
+            "pluginId": "cordova-plugin-keyboard",
+            "clobbers": [
+                "window.Keyboard"
+            ]
+        },
+        {
+            "file": "plugins/flyacts-plugin-barcodescanner/www/barcodescanner.js",
+            "id": "flyacts-plugin-barcodescanner.BarcodeScanner",
+            "pluginId": "flyacts-plugin-barcodescanner",
+            "clobbers": [
+                "cordova.plugins.barcodeScanner"
+            ]
+        },
+        {
+            "file": "plugins/flyacts-plugin-barcodescanner/src/browser/BarcodeScannerProxy.js",
+            "id": "flyacts-plugin-barcodescanner.BarcodeScannerProxy",
+            "pluginId": "flyacts-plugin-barcodescanner",
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-console": "1.0.3",
+        "cordova-plugin-device": "1.1.2",
+        "cordova-plugin-whitelist": "1.2.2",
+        "cordova-sqlite-storage": "1.2.0",
+        "cordova-plugin-keyboard": "1.1.4",
+        "flyacts-plugin-barcodescanner": "4.1.3"
+    }
+}
